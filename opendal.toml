@@ -1,0 +1,14 @@
+[abc]
+scheme="mysql"
+connection_string="mysql://root:password@127.0.0.1:3306/testdb"
+table="data"
+key_field="key"
+value_field="data"
+
+
+[xyz]
+scheme="postgresql"
+connection_string="postgres://user:password@127.0.0.1:5432/testdb"
+table="data"
+key_field="key"
+value_field="value"
