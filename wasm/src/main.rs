@@ -1,13 +1,13 @@
 extern "C" {
     fn custom_stat(
-        preofile_name: *const u8,
-        preofile_name_length: i32,
+        profile_name: *const u8,
+        profile_name_length: i32,
         file_name: *const u8,
         file_name_len: i32,
     ) -> i32;
     fn custom_read(
-        preofile_name: *const u8,
-        preofile_name_length: i32,
+        profile_name: *const u8,
+        profile_name_length: i32,
         file_name: *const u8,
         file_name_len: i32,
         buf: *const u8,
@@ -15,8 +15,8 @@ extern "C" {
         readlen: &mut i32,
     ) -> i32;
     fn custom_write(
-        preofile_name: *const u8,
-        preofile_name_length: i32,
+        profile_name: *const u8,
+        profile_name_length: i32,
         file_name: *const u8,
         file_name_len: i32,
         buf: *const u8,
